@@ -10,7 +10,7 @@
 </head>
 <body <?php body_class(); ?>>
 
-<header class="navbar bg-neutral text-neutral-content px-12">
+<header class="navbar bg-base-200 px-12">
     <div class="navbar-start">
         <button class="btn btn-ghost">
             <?php $custom_logo_id = get_theme_mod('custom_logo');
@@ -21,11 +21,16 @@
         </button>
     </div>
     <ul class="navbar-center menu menu-horizontal">
-        <?php wp_nav_menu(array(
+        <?php
+        wp_nav_menu(array(
             'theme_location' => 'primary',
-            'container'      => false,
-            'items_wrap'     => '%3$s',
-        )); ?>
+            'container' => false,
+            'menu_class' => '',
+            'items_wrap' => '%3$s',
+            'before' => '<span class="btn btn-ghost">',
+            'after' => '</span>',
+        ));
+        ?>
     </ul>
     <div class="navbar-end">
         <h1>ok</h1>
