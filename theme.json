@@ -1,0 +1,71 @@
+{
+	"version": 2,
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"name": "Primary",
+					"slug": "primary",
+					"color": "#0073AA"
+				},
+				{
+					"name": "Secondary",
+					"slug": "secondary",
+					"color": "#005075"
+				},
+				{
+					"name": "White",
+					"slug": "white",
+					"color": "#FFFFFF"
+				},
+				{
+					"name": "Black",
+					"slug": "black",
+					"color": "#000000"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+					"name": "System Font",
+					"slug": "system-font"
+				}
+			],
+			"fontSizes": [
+				{
+					"name": "Small",
+					"size": "12px",
+					"slug": "small"
+				},
+				{
+					"name": "Regular",
+					"size": "16px",
+					"slug": "regular"
+				},
+				{
+					"name": "Large",
+					"size": "36px",
+					"slug": "large"
+				}
+			]
+		},
+		"spacing": {
+			"padding": {
+				"small": "8px",
+				"medium": "16px",
+				"large": "32px"
+			}
+		}
+	},
+	"styles": {
+		"color": {
+			"text": "#333333",
+			"background": "#FFFFFF"
+		},
+		"typography": {
+			"fontSize": "16px"
+		}
+	}
+}
