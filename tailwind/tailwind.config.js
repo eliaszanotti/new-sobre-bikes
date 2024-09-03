@@ -1,8 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ["../**/*.{html,js,php}"],
+	content: ["../**/*.{html,php}"],
 	theme: {
 		extend: {},
 	},
-	plugins: [],
+	plugins: [
+		require('daisyui'),
+	],
 }
