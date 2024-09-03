@@ -8,4 +8,26 @@
     
     <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>></body>
+<body <?php body_class(); ?>>
+
+<header class="navbar bg-neutral text-neutral-content px-12">
+    <div class="navbar-start">
+        <button class="btn btn-ghost">
+            <?php $custom_logo_id = get_theme_mod('custom_logo');
+            $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
+            if ($logo) {
+                echo '<img src="' . esc_url($logo[0]) . '" alt="' . esc_attr(get_bloginfo('name')) . '" class="object-cover object-center h-3/4">';
+            } ?>
+        </button>
+    </div>
+    <ul class="navbar-center menu menu-horizontal">
+        <?php wp_nav_menu(array(
+            'theme_location' => 'primary',
+            'container'      => false,
+            'items_wrap'     => '%3$s',
+        )); ?>
+    </ul>
+    <div class="navbar-end">
+        <h1>ok</h1>
+    </div>
+</header>
